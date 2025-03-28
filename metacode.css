@@ -98,3 +98,22 @@ img {
 .nav ul li a.active::after {
     width: 100%;
 }
+
+/* 页脚 */
+.footer {
+    background-color: #222;
+    color: #aaa;
+    padding: 60px 0 20px;
+}
+.footer-logo img {
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a:hover {
+    color: white;
+}
