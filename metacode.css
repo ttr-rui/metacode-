@@ -117,3 +117,221 @@ img {
 .footer-links ul li a:hover {
     color: white;
 }
+
+/* 关于我们 */
+.about-section {
+    width: 100%;
+    height: 572.39px;
+}
+
+/* 时间轴 */
+.timeline-section {
+    padding: 60px 0 80px;
+    background-color: #f9f9f9;
+}
+
+.timeline-section h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 36px;
+    color: #333;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: #ff4e50;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+
+.timeline-item:nth-child(even) {
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-right: 0;
+}
+
+.timeline-date {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff4e50;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.timeline-content {
+    width: calc(50% - 40px);
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+    margin-bottom: 10px;
+    color: #ff4e50;
+}
+
+/* 公司环境 */
+.about-environment {
+    width: 100%;
+    height: 1034px;
+    background-image: url(https:www.kurogames.com/_nuxt/img/bg_environment.6efedd6.png);
+}
+
+.about-environment img {
+    display: inline-block;
+    vertical-align: bottom;
+    padding: 81px 190px;
+    text-align: center;
+}
+
+.box1 {
+    width: 690px;
+    height: 300px;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.carousel-item.active {
+    opacity: 1;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption h3 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.carousel-caption p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 20px;
+}
+
+.carousel-control.next {
+    right: 20px;
+}
+
+/* 产品列表 */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    padding: 15px;
+    color: #333;
+}
+
+.product-card p {
+    padding: 0 15px 15px;
+    color: #666;
+}
+
+.enterweb {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.enterweb-header {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    background-image: url(./image/库街区.png);
+    background-position: 10px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 15.4%;
+    transform: translateY(-50%);
+}
+
